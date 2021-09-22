@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ all_books }}
+{% for book in all_books %}
+    
+<p>{{ book.title }}</p>
+<p>{{ book.author.first_name }}</p>
+<p>{{ book.author.last_name }}</p>
+<p>{{ book.author.publisher }}</p>
+
+
+{% endfor %}
+    
+{% endblock content %}
